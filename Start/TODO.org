@@ -1,0 +1,14 @@
+* TODOS
+** TODO Solve the skin problem
+** TODO Make an exploitation video for linkedin profile
+** TODO custome org mode font sizes
+
+
+Quantité totale en stock : Somme de restant dans stock ou entres_stock par code_CIP7/code_CIP13.
+Nombre de produits uniques : Nombre distinct de code_CIP7/code_CIP13 dans stock.
+Taux de rotation : Ratio entrées (flux.quantite où consumed=0) / sorties (flux.consumed=1) par période.
+Valeur du stock : Somme de prix_d_achat * restant dans entres_stock.
+Produits en rupture : restant=0 dans stock ou entres_stock.
+Retours : Total de quantite dans retours, proportion d'erreurs (err=1).
+Périmés ou proches de péremption : date_peremption dans entres_stock par rapport à la date actuelle.
+Répartition par catégorie : Somme de restant par category dans stock.
