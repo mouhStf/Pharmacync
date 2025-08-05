@@ -49,8 +49,9 @@ PharmaCync est une application de bureau pour la gestion de pharmacie, conçue p
     *(Note : La commande peut varier selon votre système, par exemple `mingw32-make` sur Windows avec MinGW)*
 
 4.  **Lancez l'application :**
-    L'exécutable se trouvera dans le répertoire `build`.
+    L'exécutable se trouvera dans le répertoire `build`. Mettre le fichier de la base de donnée dans le même dossier que l'exécutable.
     ```bash
+    cp ../DataPrimeYo.db .
     ./pharmacync_start
     ```
 
