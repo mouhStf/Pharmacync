@@ -44,8 +44,7 @@ ApplicationWindow {
   StackView {
     id: stack
     anchors.fill: parent
-    //initialItem: loginComponent
-    initialItem: menuComponent
+    initialItem: loginComponent
   }
   
   Component {

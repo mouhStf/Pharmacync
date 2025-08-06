@@ -15,8 +15,8 @@ int main(int argc, char *argv[]) {
   QApplication app(argc, argv);
 
   Database::initDatabase();
-  Statistics stats;
 
+  qmlRegisterType<Statistics>("engines", 1, 0, "Statistics");
   qmlRegisterType<LoginEngine>("engines", 1, 0, "LoginEngine");
   qmlRegisterType<TableModel>("core", 1, 0, "TableModel");
 

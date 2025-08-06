@@ -3,9 +3,14 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import "../Widgets"
 
+import engines
+
 Frame {
   id: root
   padding: 5
+
+
+  Statistics {}
 
   function formated(n) {
     let locale = Qt.locale("fr_FR");

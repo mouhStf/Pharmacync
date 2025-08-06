@@ -27,18 +27,6 @@ Dialog {
         preview.nombrePacket = result[0][0];
       }
 
-      var result = sqlEngine.select(
-        "entres_stock", ["quantite", "prix_d_achat","prix_de_vente"], "code_CIP13", 
-        root.idStock, "AND deleted = 0 AND restant > 0"
-      );
-      qt = 0
-      prixDeVenteMoyenne = 0
-      for (var i = 0; i < result.length; i++) {
-        qt += 1;
-        prixDeVenteMoyenne += result[i][2];
-      }
-      console.log("Moyenne vente: ", prixDeVenteMoyenne / qt)
-
     } else {
       root.idStock = "-1"      
     }
